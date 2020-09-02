@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "target": "ES5",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["./src"],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "inf-ee",
+  "version": "1.0.4",
+  "description": "Type Safe EventEmitter",
+  "main": "./dist/cjs/EventEmitter.js",
+  "types": "./dist/cjs/EventEmitter.d.ts",
+  "module": "./dist/esm/EventEmitter.js",
+  "scripts": {
+    "build:browser": "webpack",
+    "build:commonjs": "tsc --project tsconfig.cjs.json",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build": "npm run build:commonjs && npm run build:esm && npm run build:browser",
+    "test": "jasmine-ts --config=jasmine.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/infinitum11/inf-ee"
+  },
+  "files": [
+    "dist/"
+  ],
+  "author": "Infinitum11",
+  "license": "MIT",
+  "keywords": [
+    "event emitter",
+    "EventEmitter",
+    "events",
+    "type safe",
+    "ts",
+    "typescript",
+    "ts-evt",
+    "type safe event emitter",
+    "event library",
+    "ts events",
+    "typescript events"
+  ],
+  "devDependencies": {
+    "@types/jasmine": "^3.5.14",
+    "jasmine": "^3.6.1",
+    "jasmine-spec-reporter": "^5.0.2",
+    "jasmine-ts": "^0.3.0",
+    "ts-loader": "^8.0.3",
+    "ts-node": "^9.0.0",
+    "typescript": "^3.9.5",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
